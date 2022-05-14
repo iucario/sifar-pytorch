@@ -451,7 +451,7 @@ def main(args):
     else:
         video_data_cls = VideoDataSet
     train_list = train_list_name
-    print(f'{args.data_dir} {train_list=}')
+    print(f'args.data_dir={args.data_dir} train_list={train_list}')
     train_augmentor = get_augmentor(
         True, args.input_size, mean, std, threed_data=args.threed_data,
         version=args.augmentor_ver, scale_range=args.scale_range, dataset=args.dataset)

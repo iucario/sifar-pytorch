@@ -401,7 +401,7 @@ class VideoDataSet(data.Dataset):
         self.video_length = (self.num_frames * self.sample_freq) / self.fps
 
         # debug
-        print(f'{self.root_path=}, {self.list_file=}')
+        print(f'self.root_path={self.root_path}, self.list_file={self.list_file}')
 
         if self.modality in ['flow', 'rgbdiff']:
             self.num_consecutive_frames = 5
