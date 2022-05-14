@@ -94,7 +94,7 @@ DATASET_CONFIG = {
         'train_list_name': 'train.txt',
         'val_list_name': 'val.txt',
         'filename_seperator': " ",
-        'image_tmpl': '{:05d}.jpg',
+        'image_tmpl': 'img_{:05d}.jpg',
         'filter_video': 0
     },
     'hmdb51': {

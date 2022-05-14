@@ -400,6 +400,9 @@ class VideoDataSet(data.Dataset):
         self.resampling_rate = resampling_rate
         self.video_length = (self.num_frames * self.sample_freq) / self.fps
 
+        # debug
+        print(f'{self.root_path=}, {self.list_file=}')
+
         if self.modality in ['flow', 'rgbdiff']:
             self.num_consecutive_frames = 5
         else:
